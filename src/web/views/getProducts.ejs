@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./layouts/header.ejs') %>
+    <title>EJS App | Productos</title>
+</head>
+
+<body class="bg-dark vh-100">
+    <div class="container">
+        <div class="row d-flex justify-content-center pt-5">
+            <div class="col-md-3 d-flex justify-content-center">
+                <a href="/products/create" class="btn btn-primary">Crear Producto</a>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center pt-5">
+            <div class="col-md-8">
+                <table class="table table-borderless table-dark text-center">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if (products.length > 0) { %>
+                            <% products.forEach(product => { %>
+                                <tr>
+                                    <td class="align-middle">
+                                        <%= product.title %>
+                                    </td>
+                                    <td class="align-middle">
+                                        <%= product.price %>
+                                    </td>
+                                    <td class="align-middle">
+                                        <img src="<%= product.thumbnail %>" alt="<%= product.name %>" class="img-fluid rounded-4" width="200">
+                                    </td>
+                                </tr>
+                            <% }) %>
+                        <% } else { %>
+                            <tr>
+                                <td colspan="3">No hay productos</td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.tablefixed tbody {
+    height: 430px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.tablefixed thead,
+.tablefixed tbody,
+.tablefixed td,
+.tablefixed th {
+    display: block;
+}
+
+.tablefixed tbody td,
+.tablefixed thead > tr > th {
+    float: left;
+    border-bottom-width: 0;
+}
+
+.tablefixed thead tr,
+.tablefixed tbody tr {
+    width: 100%;
+}
+
+.tablefixed thead th,
+.tablefixed tbody td {
+    width: 300px;
+}

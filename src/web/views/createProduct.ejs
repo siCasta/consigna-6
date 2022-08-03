@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./layouts/header.ejs') %>
+    <link rel="stylesheet" href="/css/tablefixed.css">
+    <title>EJS App | Crear Productos</title>
+</head>
+
+<body class="bg-dark vh-100">
+    <div class="container">
+        <div class="row d-flex justify-content-center pt-5">
+            <div class="col-md-3 d-flex flex-column align-items-center justify-content-center">
+                <a href="/products" class="btn btn-primary mb-4">Ver Productos</a>
+                <h1 class="text-light">Crear Producto</h1>
+                <form id="form" class="w-100">
+                    <div class="mb-3">
+                        <label for="title" class="form-label text-light">Nombre</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Example">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label text-light">Precio</label>
+                        <input type="number" class="form-control" id="price" name="price" placeholder="10">
+                    </div>
+                    <div class="mb-3">
+                        <label for="thumbnail" class="form-label text-light">Imagen</label>
+                        <input type="text" class="form-control" id="thumbnail" name="thumbnail" placeholder="https://www.example">
+                        <small class="text-secondary">Te da una url random</small><br>
+                        <small class="text-secondary">Si no carga, recarga la pagina</small>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Crear</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-9">
+                <table class="table table-borderless table-dark text-center tablefixed">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody id="products">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <h1>Chat</h1>
+                <div id="chat" style="max-height: 150px; overflow-y: auto; overflow-wrap: break-word;"></div>
+                <input type="text" class="form-control" id="chatinput">
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/js/products/create.js"></script>
+</body>
+
+</html>

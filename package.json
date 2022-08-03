@@ -1,0 +1,30 @@
+{
+  "name": "consigna-6",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siCasta/consigna-6.git"
+  },
+  "author": "Juan Sebastian Castañeda Burbano",
+  "bugs": {
+    "url": "https://github.com/siCasta/consigna-6/issues"
+  },
+  "homepage": "https://github.com/siCasta/consigna-6#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "jad-db": "^1.0.1",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

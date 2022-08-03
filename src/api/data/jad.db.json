@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "_id": "36b2f53f-63ab-4b30-b45b-58f317d2010c",
+            "title": "a",
+            "price": 1,
+            "thumbnail": "https://i.picsum.photos/id/80/1000/1000.jpg?hmac=pRVr6BU_oNEg0YbGbzY5YcNUExzly1WSPgV0lEDwvhY",
+            "_createdAt": "2022-08-03T21:17:24.187Z",
+            "_updatedAt": "2022-08-03T21:17:24.187Z"
+        },
+        {
+            "_id": "273859f3-aefe-47ca-8cea-c6f395577628",
+            "title": "b",
+            "price": 2,
+            "thumbnail": "https://i.picsum.photos/id/429/1000/1000.jpg?hmac=VowG4KJz41ru1B09gsBjWQ7i1JbcSuyHhEqvjojrcvs",
+            "_createdAt": "2022-08-03T21:17:31.163Z",
+            "_updatedAt": "2022-08-03T21:17:31.163Z"
+        },
+        {
+            "_id": "75b9b329-8d91-4b52-86a6-1b558a95d3b5",
+            "title": "c",
+            "price": 3,
+            "thumbnail": "https://i.picsum.photos/id/979/1000/1000.jpg?hmac=qGwtSbHyKn86vAxTan93XEyqNdFBV72bNh00pG5e3io",
+            "_createdAt": "2022-08-03T21:18:10.023Z",
+            "_updatedAt": "2022-08-03T21:18:10.023Z"
+        }
+    ]
+}
